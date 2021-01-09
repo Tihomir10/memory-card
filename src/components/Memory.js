@@ -28,7 +28,7 @@ function Memory() {
 
   return ( 
     <div>
-      <img  src={array[2].link} />
+      <Game array={array} />
     </div>
   )
 }
