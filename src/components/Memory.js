@@ -14,16 +14,21 @@ var ary = []
 var i = 0;
 
 for (var key in images) {
-  ary.push({id: i, link: images[key].default})
+  var name = images[key].default.replace('/static/media/', '')
+  name = name.replace('_', ' ')
+  name = name.substring(0, name.length - 13).toUpperCase()
+  ary.push({id: i, link: images[key].default, name})
   i++
 }
 
 function Memory() {
   const [ array, setArray ] = useState(ary);
+  
+  console.log(array)
 
   return ( 
     <div>
-      <img  src={array[6].link} />
+      <img  src={array[2].link} />
     </div>
   )
 }
