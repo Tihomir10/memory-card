@@ -3,8 +3,8 @@ function Game(props) {
     <div className='container'>
       {props.array.map(obj => {
         return (
-          <div className='box'>
-            <img src={obj.link} />
+          <div className='box' onClick={props.handleClick}>
+            <img src={obj.link} id={obj.id} />
             <p>{obj.name}</p>
           </div>
         )
