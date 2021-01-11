@@ -4,10 +4,21 @@
 }
 
 .box {
+  position: relative;
+  text-align: center;
   width: 33.3%;
 }
 
 img {
   height: 100%;
   width: 100%;
+}
+
+p {
+  color: white;
+  font-size: x-large;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

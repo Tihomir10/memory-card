@@ -5,6 +5,7 @@ function Game(props) {
         return (
           <div className='box'>
             <img src={obj.link} />
+            <p>{obj.name}</p>
           </div>
         )
       })}
